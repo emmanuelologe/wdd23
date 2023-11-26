@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&family=Poppins&display=swap');
+
+
+
+body {
+    font-family: 'Montserrat', sans-serif; /* Set your preferred font family */
+    margin: 0;
+    padding: 0;
+    max-width: 1200px; /* Set your preferred maximum width */
+    margin: 0 auto; /* Center the content horizontally */
+    overflow-x: hidden; /* Hide horizontal scrollbar if content overflows */
+}
+
+
+header, nav, #hero, main, footer {
+    box-sizing: border-box;
+    width: 100%; /* Ensure these sections take the full width of the body */
+    padding: 20px; /* Add padding to these sections */
+}
+
+header {
+    display: flex;
+    align-items: left;
+    justify-content: space-evenly;
+    padding: 5px;
+}
+
+header img {
+    width: 30%;
+    height: 30%;
+    align-items: center;
+}
+
+#hero img {
+    width: 50%; /* Set the image width to 50% of its container */
+    height: auto; /* Maintain the aspect ratio */
+    display: block; /* Ensure proper spacing around the image */
+    margin: 0 auto; /* Center the image horizontally */
+    align-items: left;
+}
+
+#mode {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	font-size: 3rem;
+	cursor: pointer;
+	font-size: 2rem;
+}
+
+
+
+nav {
+    background-color: #66101f; /* Add your desired background color */
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #f0f2fa; /* Add your desired text color */
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+main {
+    padding: 20px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}  
+
+#menu{
+    display: none;
+    z-index: 1;
+}
+
+
+
+
+
+
+
+@media (max-width: 480px){
+    /* small view navigation */
+#menu {
+	font-size: 1.5rem;
+	border: 1px solid rgba(0,0,0,.3);
+	padding: .25rem .75rem;
+	background-color: #eee;
+	color: #000;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+    display: block;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❎";
+}
+nav{
+    display: none;
+}
+nav.show{
+    display: flex;
+    flex-direction: column; /* Stack menu items vertically */
+    background-color: #66101f;
+}
+#mode {
+    text-align: left; /* Align the content to the left on smaller screens */
+}
+}
+
+/* Dark mode styles */
+body:not(.manual-dark-mode) {
+    --bg-color-light: #f0f0f0;
+    --text-color-light: #000;
+    --bg-color-dark: #1a1a1a;
+    --text-color-dark: #fff;
+
+    background-color: var(--bg-color-light);
+    color: var(--text-color-light);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.manual-dark-mode {
+    background-color: #1a1a1a !important; /* Replace with your desired dark mode background color */
+    color: #fff; /* Replace with your desired dark mode text color */
+}
+/* Add more styles as needed for the rest of your content */
