@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gwarinpa Chamber of Commerce</title>
+    <meta name="description" content="This is Emmanuel Ologe Chamber of Commerce website for Gwarinpa a business anad residential area in Abuja Nigeria">
+    <meta name="author" content="Emmanuel Ologe">
+    <meta property="og:title" content="Emmanuel Ologe - WDD 230 - Gwarinpa Chamber of Commerce">
+    <meta property="og:type" content="website" >
+    <meta property="og:image" content="https://media.premiumtimesng.com/wp-content/files/2020/05/abuja-1589282102432.jpg">
+    <meta property="og:url" content="https://emmanuelologe.github.io/wdd230/">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/base.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png"  alt="logo">
+        <!-- <h1>Gwarinpa <br> Chamber of <br>Commerce</h1> -->
+        <div id="mode">
+            🕶️
+        </div>
+         <nav>
+            <a href="index.html">Home</a>
+        </nav>
+    </header>
+    <div id="hero">
+        <!-- <img src="images/medium-shot-black-woman-running-small-business.jpg" alt="Emmanuel Ologe's picture"> -->
+        <picture>
+            <source srcset="images/new_hero_small.webp" media="(max-width: 500px)">
+            <div class="overlay-text small-overlay">
+                <h2>Small</h2>
+            </div>
+            <source srcset="images/new_hero_medium.webp" media="(max-width: 1000px)">
+            <div class="overlay-text medium-overlay">Medium</div>
+            <img src="images/wdd230-org(2).webp" alt="table setting" width="1500" height="750">
+          </picture>
+        <h2>Welcome to Gwrinpa Chamber of Commerce</h2>
+        <p>Greetings and welcome to the Gwarinpa Chamber of Commerce website! Whether you're a local business owner, an entrepreneur, or just looking to learn more about our community, we're happy to have you here. We hope you find our website to be a valuable resource for information and networking opportunities.</p>
+    </div>
+
+    <main>
+        <button id="menu"></button>
+        <img src="" alt="">
+        <section id="current-event">
+            <div class="card">
+                <h2>The food fest</h2>
+                <h3>Food Drinks and many more</h3>
+                <img src="" alt="Image 1">
+                <p></p>
+            </div>
+        </section>
+        <section id="weather">
+            <h2>Current Weather</h2>
+            <div id="weather-info">
+                <p>Loading weather...</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p id="copyright"></p>
+    </footer>
+
+    <script src="script/getdata.js"></script>
+    <script src="script/windchill.js"></script>
+</body>
+</html>
