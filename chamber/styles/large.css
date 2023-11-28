@@ -6,7 +6,7 @@
         display: grid;
         font-family: 'Montserrat', sans-serif;  
         grid-template: 70px 1fr auto /  1fr;
-        max-width: 100%; /* Set your preferred maximum width */
+        max-width: 1000px; /* Set your preferred maximum width */
         margin: auto; /* Center the content horizontally */
         overflow-x: hidden; /* Hide horizontal scrollbar if content overflows */
         height: 100vh;
@@ -138,11 +138,9 @@
     
 
     .hero{
-        display: flex;
-        justify-content: center;
-        align-items: center;
         width: 100%;
         height: auto;
+        
     }
 
     .active{
