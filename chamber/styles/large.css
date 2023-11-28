@@ -18,6 +18,7 @@
         display: grid;
         grid-template-columns: 130px 75px 1fr;
         background-color: #66101f;
+        z-index: 2;
     }
 
     #logo img {
