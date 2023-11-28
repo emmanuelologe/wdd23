@@ -101,27 +101,27 @@ async function getWeatherData() {
 // Call the getWeatherData function to update the weather information
 getWeatherData();
 
-let allList = new Array();
+// let allList = new Array();
 
-function construct(membersList) {
-    allList = membersList;
+// function construct(membersList) {
+//     allList = membersList;
 
-    const Listing = document.querySelector("#gridList");
-    for (let i = 0; i < 3; i++) {
+//     const Listing = document.querySelector("#gridList");
+//     for (let i = 0; i < 3; i++) {
 
-            if (allList[i].membership != "Bronze") {
-           const html = `<section>
-           <img src='${allList[i].icon}' width = \'120px\'; height:\'120px\'>
-           <h3>${'Business Name: ' + allList[i].name}</h3>
-           <h4>${'Address: ' + allList[i].address}</h4>
-           <h4>${'Phone Number: ' + allList[i].phonenumber}</h4>
-           <h4>${'Website: ' + allList[i].website + ' years'}</h4>
-           <h4>${'Membership: ' + allList[i].membership + ' - since: ' + allList[i].since}</h4>
-           </section>`;
-          Listing.innerHTML += html;
+//             if (allList[i].membership != "Bronze") {
+//            const html = `<section>
+//            <img src='${allList[i].icon}' width = \'120px\'; height:\'120px\'>
+//            <h3>${'Business Name: ' + allList[i].name}</h3>
+//            <h4>${'Address: ' + allList[i].address}</h4>
+//            <h4>${'Phone Number: ' + allList[i].phonenumber}</h4>
+//            <h4>${'Website: ' + allList[i].website + ' years'}</h4>
+//            <h4>${'Membership: ' + allList[i].membership + ' - since: ' + allList[i].since}</h4>
+//            </section>`;
+//           Listing.innerHTML += html;
 
-       } 
-      }
-    };
+//        } 
+//       }
+//     };
 
 });  
