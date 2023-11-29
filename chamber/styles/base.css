@@ -235,7 +235,7 @@
       #attractions{
         outline-style:solid;
         outline-width: thin;
-        background-color: #576CBC;
+        background-color: #855a5c;
         color: #f0f2fa;
         padding: 15px;
         margin-top: 10px;
@@ -261,13 +261,13 @@
       
       form fieldset{
         margin: 2rem 0;
-        border: 1px solid #445ba9;
+        border: 1px solid #66101f;
         border-radius: 10px;
         padding: .5rem 2%;
     }
     
     form legend {
-        color: #445ba9;
+        color:#855a5c;
         margin: 0 1rem;
         padding: 0.5rem;
     }
@@ -299,7 +299,7 @@
     
     #submitBtn {
         border: none;
-        background-color: #576CBC;
+        background-color: #66101f;
         color: white;
         font-weight: 600;
         border-radius: 1rem;
@@ -330,7 +330,7 @@
     }
 
     #thankyoumessage{
-        color: #445ba9;
+        color: #000501;
         margin-top: 50px;
         padding: 0.5rem;
         font-weight: 600;
@@ -341,14 +341,14 @@
     #join-benefits {
         grid-column: 2/3;
         margin-left: 20px;
-        background-color: #576CBC;
+        background-color: #66101f;
         padding: 15px;
         margin-top: 2px;
     }
 
     .price {
         font-weight: 700;
-        color: rgb(219, 186, 55);
+        color: #f0f2fa;
     }
    
         /**  Directory Styles with JS **/
@@ -362,7 +362,7 @@
             margin: 1rem auto;
             border: 1px solid rgba(0, 0, 0, 0.054);
             padding: 0.3rem;
-            background-color: #576CBC;
+            background-color: #855a5c;
             text-align: center;
         }
         
