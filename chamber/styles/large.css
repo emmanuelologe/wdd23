@@ -127,7 +127,7 @@
 
     #wind-chill{
         padding: 10px 20px;
-        background-color: rgb(219, 186, 55);
+        background-color: #66101f;
         color: #000;
         border-radius: 8px;
         font-weight: 700;
@@ -168,9 +168,9 @@
         padding: 5px;
       }
     
-      /* .active::before {
+      .active::before {
         content: "📍";
-      } */
+      }
 
     #content{
         display: grid;
@@ -266,10 +266,13 @@
         font-size: 1.5rem;
         cursor: pointer;
         z-index: 2; */
-        font-size: 1.5rem;
+        position: absolute;
+        font-size: 3rem;
         cursor: pointer;
         margin-right: 10px; /* Adjust the margin as needed */
         z-index: 3;
+        top: 5%;
+        right: 5%;
     
     }
 
@@ -375,20 +378,22 @@
     .price {
         font-weight: 700;
         color: #f0f2fa;
+
     }
 
     /**  Directory Styles with JS **/
 
     main h1 {
         font-size: 1.7em;
-        color: #576CBC;
+        color: #000501;
+        text-align: center;
     }
 
     .toggle {
         margin: 1rem auto;
         border: 1px solid rgba(0, 0, 0, 0.054);
         padding: 0.3rem;
-        background-color: #576CBC;
+        background-color: #855a5c;
         text-align: center;
     }
     
@@ -416,7 +421,7 @@
         text-align: center;
         outline-style:solid;
         outline-width: thin;
-        background-color: #576CBC;
+        background-color: #855a5c;
         color:#f0f2fa;
         padding: 15px;
         margin-top: 10px;
@@ -442,7 +447,7 @@
         text-align: center;
         outline-style:solid;
         outline-width: thin;
-        background-color: #576CBC;
+        background-color: #855a5c;
         color:#f0f2fa;
         padding: 15px;
         margin-top: 10px;

@@ -1,0 +1,20 @@
+{
+    "members": [
+      {
+        "name": "Business Name 1",
+        "icon": "images/image-removebg-preview-6.webp",
+        "address": "Address 1",
+        "phonenumber": "123-456-7890",
+        "website": "http://example.com",
+        "membership": "Gold",
+        "since": "2020-01-01"
+      }
+      
+    ]
+}
+  
+
+
+
+
+
