@@ -13,7 +13,7 @@ function construct(membersList) {
       <h3>${'Business Name: ' + currentItem.name}</h3>
       <h4>${'Address: ' + currentItem.address}</h4>
       <h4>${'Phone Number: ' + currentItem.phonenumber}</h4>
-      <h4>${'Website: ' + currentItem.website + ' years'}</h4>
+      <h4>Website: <a href="${currentItem.website}" target="_blank">${currentItem.website}</a> </h4>
       <h4>${'Membership: ' + currentItem.membership + ' - since: ' + currentItem.since}</h4>
       
       </article>`;
