@@ -13,7 +13,7 @@
     }
 
     header {
-        grid-column: 1/ 4;
+        grid-column: 1/4;
         display: grid;
         grid-template-columns: 100px 70px 1fr;
         background-color: #66101f;
@@ -24,11 +24,6 @@
         height: 70px;
     }
 
-    #social img {
-        padding-top: 20px;
-        width: 30px;
-        height: 30px;
-    }
 
     main{
         position: relative;
@@ -47,6 +42,10 @@
         top: 15px;
     }
     
+    #menu.open {
+        padding: 20px;
+        height: 100vh; 
+    }
     #menu::before {
         content: "☰";
     }
@@ -55,16 +54,6 @@
         content: "❌";
     }
     
-  
-    #hero-msg {
-        font-weight: 900;
-        color: #f0f2fa;
-        font-size: 1.8em;
-        position: absolute;
-        top: 3%;
-        width: 100%;
-        text-align: center;
-    }
 
     #join {
         display: block;
@@ -88,13 +77,18 @@
     }
 
     .navigation {
+        display: none;
+       
+    }
+
+    .navigation {
         display: flex;
         flex-direction: column;
         list-style: none;
-        color: #f0f2fa;
+        color: #66101f;
         margin-top: 30px;
-    }
-
+    } 
+    
     .navigation li{
         display: none;
     }
@@ -114,6 +108,10 @@
         font-weight: 700;
     }
     
+    .open {
+        background-color: #855a5c; /* Set the background color for the opened navigation */
+        padding: 20px; /* Adjust padding as needed */
+    }
     .open li {
         display: block;
         width: 100%;
